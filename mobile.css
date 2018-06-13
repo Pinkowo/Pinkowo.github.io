@@ -1,0 +1,46 @@
+.title{
+    font-size:36px;font-weight:bold;
+    text-align:center;
+}
+.menu-desktop{display:block;text-align:center}
+.menu-mobile{display:none}
+.frame{
+    width:1200px;margin:0px auto;
+    text-align:center;
+}
+.box{
+    width:260px;margin:10px;
+    display:inline-block;vertical-align:top;
+    background-color:#ffcccc;
+       }
+        /*CSS3 Media Query*/
+/*500px~1200px*/        
+@media(max-width:1200px) {
+        /*螢幕尺寸小於500px的時候，套用這個區塊的設定*/
+        .frame{
+            width:100%;
+        }
+        .box{
+            width:45%;
+        }
+         .title{
+    font-size:24px;font-weight:bold;
+    text-align:center;
+}
+}        
+/*0~500px*/
+@media(max-width:500px) {
+        /*螢幕尺寸小於500px的時候，套用這個區塊的設定*/
+        .frame{
+            width:320px;
+        }
+        .box{
+            width:90%
+        }
+        .title{
+    font-size:12px;font-weight:bold;
+    text-align:center;
+}
+.menu-desktop{display:none}
+.menu-mobile{display:block;text-align:center}
+}
